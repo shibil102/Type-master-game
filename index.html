@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Type master</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings-btn" id="settings-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+
+      <div class="nav" id="nav">
+        <label>Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <div class="game-container">
+        <div class="game-board">
+          <h2>🙈 Typing master 🙊</h2>
+
+          <small>Type the following:</small>
+          <h1 id="word">Hello</h1>
+
+          <input
+            type="text"
+            id="text"
+            autocomplete="off"
+            autocapitalize="off"
+            placeholder="Type here......"
+          />
+
+          <p class="time">
+            Time left: <span id="time" class="time-data">10s</span>
+          </p>
+          <p class="score">
+            Your score: <span id="score" class="score-data">0</span>
+          </p>
+        </div>
+        <div class="game-end" id="game-end"></div>
+      </div>
+    </div>
+  </body>
+</html>
